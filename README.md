@@ -1,7 +1,5 @@
 # Gifs App
 
-Gifs App es un proyecto SPA desarrollada con el Framewok Angular y generado con [Angular 17](https://angular.dev/). Este proyecto se usa para el aprendizaje y muestra de capacidades. Siéntase libre de clonar este proyecto.
-
 Una web app desarrollada en [Angular 17](https://angular.dev/) para buscar gif usando la api de giphy.com
 <br><br>
 Este proyecto se usa para el aprendizaje y muestra de capacidades. Siéntase libre de clonar este proyecto
