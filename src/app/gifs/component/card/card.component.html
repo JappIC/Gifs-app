@@ -1,0 +1,17 @@
+<article>
+    <share-lazy-image
+        [url]="gif.images.downsized_medium.url"
+        class="display-contents"
+        [alt]="gif.title"
+        [width]="gif.images.original.width"
+        [height]="gif.images.original.height"
+    ></share-lazy-image>
+    <!--<img [src]="gif.images.downsized_medium.url" [alt]="gif.title" [width]="gif.images.original.width" [height]="gif.images.original.height">-->
+    <div class="body">
+        <h2>{{gif.title || 'No title'}}</h2>
+        <a [href]="gif.user.profile_url || 'https://www.google.es'" target="_blank">
+            <img [src]="gif.user.avatar_url || 'https://www.google.es'" [alt]="gif.user.profile_url || 'https://www.google.es'">
+            {{gif.user.username || 'No name'}}
+        </a>
+    </div>
+</article>

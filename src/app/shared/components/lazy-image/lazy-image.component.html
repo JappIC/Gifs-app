@@ -1,0 +1,18 @@
+<img
+    [src]="url"
+    class="animate__animated animate__fadeIn"
+    [alt]="alt"
+    [width]="width"
+    [height]="height"
+    (load)="onLoad()"
+    [ngStyle]="{ display: hasLoaded ? '' : 'none' }"
+>
+<img
+    *ngIf="!hasLoaded"
+    src="assets/loader.svg"
+    alt="Loader"
+    [width]="width"
+    [height]="height"
+    class="loader"
+>
+

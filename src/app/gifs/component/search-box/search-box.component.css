@@ -1,0 +1,11 @@
+div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+
+    & input{
+        border: 5px solid var(--c-company);
+        border-radius: 5px;
+        padding: 5px;
+    }
+}

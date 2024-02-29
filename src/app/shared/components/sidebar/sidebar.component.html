@@ -1,0 +1,8 @@
+<section>
+    <h1>Gifs App</h1>
+    <nav>
+        <button *ngFor="let tag of tags" (click)="searchTag(tag)">
+        {{tag | titlecase}}
+        </button>
+    </nav>
+</section>

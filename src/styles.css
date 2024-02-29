@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --c-company-2: #ffffff;
+    --c-company: #FF6600;
+
+    --c-scale-1: #080808;
+    --c-scale-2: #101010;
+    --c-scale-3: #1a1a1a;
+    --c-scale-4: #444444;
+
+    --f-size-title-app: 50px;
+    --f-size-title: 20px;
+    --f-size: 14px;
+}
+
+/* FORMAT */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--c-scale-1);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--f-size);
+}
+
+.display-contents{ display: contents }
+
