@@ -1,27 +1,35 @@
-# GifsApp
+# Gifs App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Gifs App es un proyecto SPA desarrollada con el Framewok Angular y generado con [Angular 17](https://angular.dev/). Este proyecto se usa para el aprendizaje y muestra de capacidades. Siéntase libre de clonar este proyecto.
 
-## Development server
+Una web app desarrollada en [Angular 17](https://angular.dev/) para buscar gif usando la api de giphy.com
+<br><br>
+Este proyecto se usa para el aprendizaje y muestra de capacidades. Siéntase libre de clonar este proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img src="/src/assets/Gifs-app.webp" alt="Captura de imagen Gifs App"/>
 
-## Code scaffolding
+## General:
+La aplicación tiene un buscador de Gifs. Una vez buscados, genera una lista de gifs y añade en el menú un nuevo botón para poder filtrar más tarde los resultados buscados. Para hacer persistentes las búsquedas y los botones generados con el término buscado, se usa el localstorage.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Componentes:
+La app está realizada en componentes reutilizables.
+### Card:
+Se encarga de mostrar una tarjeta con la información y el gif
+### Card List:
+Componente para mostrar la lista de tarjetas de los Gifs
+### Search box: 
+El componente encargado de realizar las peticiones de busqueda
+### Lazy image:
+Un componente reutilizable por las tarjetas para mostrar el Gif y una lógica de espera de carga
+### Sidebar:
+Este componente se encarga de toda la lógica del menú que se genera con los términos de busqueda
 
-## Build
+## Páginas:
+Las página se encargan de unificar los diferentes reutilizables y lógica.
+### Home:
+Página que engloba el componente de busqueda y los resultados
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Otros datos de interés:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- El archivo gifs.interfaces.ts, guarda la configuración del tipo de tipado de la solicitud.
+- El archivo gifs.service.ts, contiene toda la lógica principal de las peticiones.
